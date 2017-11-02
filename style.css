@@ -1,0 +1,464 @@
+/*
+Theme Name: saraya
+Theme URI: http://mostafizshabbir.com
+Author: Mostafiz Shabbir
+Author URI: http://mostafizshabbir.com
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: saraya
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+saraya is based on Underscores https://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Normalize
+# Typography
+# Elements
+# Forms
+# Navigation
+	## Links
+	## Menus
+# Accessibility
+# Alignments
+# Clearings
+# Widgets
+# Content
+	## Posts and pages
+	## Comments
+# Infinite scroll
+# Media
+	## Captions
+	## Galleries
+--------------------------------------------------------------*/
+/******************************************
+# Header Area style form here
+*******************************************/
+body{
+font-family: 'stc';
+}
+
+@font-face {
+  font-family: 'stc';
+  
+  src: url('fonts/stc.otf');
+}
+
+pre {
+	 font-family: 'stc';
+	padding: 0;
+	margin: 0 0 10px;
+	font-size: 15px;
+	/* line-height: 1.42857143; */
+	color: inherit;
+	background-color: transparent;
+	border: 1px solid transparent;
+}
+.navbar-brand {
+    position: absolute;
+    width: 100%;
+    left: 15px;
+    top: 0;
+    text-align: center;
+    margin: auto;
+}
+.navbar-toggle {
+    z-index:3;
+}
+.navbar-brand > img {
+	display: inline-block;
+}
+#navbar-collapse-1 {
+	margin-top: 84px;
+}
+.top-header{
+	width: 60%;
+	margin: auto;
+}
+.navbar-nav li a{
+	color: #cc9966;
+	font-size: 21.5px;
+	border-radius: 10px;
+	-webkit-transition: .5s;
+	transition: .5s;
+
+}
+.nav > li > a:focus, .nav > li > a:hover {
+	text-decoration: none;
+	background-color: transparent;
+	opacity: .5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+	
+}
+.bread-crumb{
+	padding: 20px 0;
+}
+.bread-crumb a{
+	text-align: center;
+	display: block;
+	margin-top: 50px;
+	color: #cc9966;
+	font-size: 37px;
+	position: relative;
+	text-decoration: none;
+	overflow: hidden;
+}
+.bread-crumb a:before{
+	content:url(images/before-bread.png);
+	position: absolute;
+	top: 0px;
+	left: 0;
+	
+}
+.bread-crumb a:after{
+	content:url(images/after-bread.png);
+	position: absolute;
+	top: 0px;
+	right: 0;
+	
+}
+
+
+/******************************************
+# blog post page style start form here
+*******************************************/
+
+
+.blog-post a img{
+	width: 100%;
+	height: 300px;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: 100% 0;
+	   object-position: 100% 0;
+}
+
+.blog-area {
+	padding-bottom: 50px;
+}
+.post-categories {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.post-categories li a{
+	color: #cc9966;
+	font-family: 'stc';
+}
+h3.blog-main-title{
+	color: #cc9966;
+	text-decoration:none;
+	display: block;
+	text-align: right;
+}
+.blog-area h2{
+	color: #cc9966;
+	text-decoration:none;
+	display: inline-block;
+	float: right;
+}
+.blog-area a{
+	text-decoration:none;
+	-webkit-transition: .5s;
+	transition: .5s;
+}
+.blog-area a:hover{
+	opacity: .5;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+.saraya-post h2 span {
+	display: inline-block;
+	float: right;
+	font-size: 22px;
+	margin-left: 16px;
+	background: #C49A6D;
+	height: 29px;
+	width: 29px;
+	padding: 2px;
+	text-align: center;
+	border-radius: 50%;
+	color: #fff;
+}
+.saraya-post p {
+	margin-right: 26px;
+	color: #C49A6D;
+	font-size: 15px;
+	font-weight: bold;
+	float: right;
+	overflow: hidden;
+	text-align: right;
+	clear: both;
+}
+
+.saraya-post h2{
+	display: inline;
+	float: right;
+	overflow: hidden;
+}
+.saraya-post{
+	overflow: hidden;
+	-webkit-column-break-inside: avoid;
+	
+}
+
+.saraya-right{
+	-webkit-column-count: 2;
+	   -moz-column-count: 2;
+	        column-count: 2;
+	-webkit-column-rule: 2px dotted #CAA47C;
+	   -moz-column-rule: 2px dotted #CAA47C;
+	        column-rule: 2px dotted #CAA47C;
+	direction: rtl;
+	
+}
+.saraya-right{
+	overflow: hidden;
+	
+}
+.blog-main-title{
+	font-size: 50px;
+	font-weight: normal;
+}
+
+
+
+.col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9 {
+	float: right;
+}
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+	float: right;
+}
+
+.col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	float: right;
+}
+
+
+.tooltip-inner img{
+	width: 100%;
+	border-radius: 10px;
+	height: 100px !important;
+}
+.tooltip-inner{
+	background: transparent;
+	width: 400px;
+	height: 100px !important;
+}
+
+.hide-image .tooltip-arrow {
+    top: 50% !important;
+right: -16px;
+    margin-top:-15px;
+    border-top:15px solid transparent;
+    border-bottom:15px solid transparent;
+    border-left:15px solid #98A89E
+}
+.tooltip.left{
+	/*left: 100px !important;*/
+	margin-top: 40px;
+}
+.saraya-post{
+	position: relative;
+	padding: 18px 0px;
+}
+.saraya-post .hide-image{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 20%;
+	background: transparent;
+	width: 200px;
+	height: 100px !important;
+}
+.saraya-post .hide-image img{
+	width: 100%;
+	border-radius: 10px;
+	height: 100px !important;
+}
+.saraya-post:hover > .hide-image{
+	display: block !important;
+}
+
+/******************************************
+# Contact us page style start form here
+*******************************************/
+.others-crumb {
+	background-image: url(images/others-bg.png);
+	padding: 25px;
+	margin: 72px 0;
+	display: block;
+}
+.others-crumb a{
+	text-align: center;
+	display: block;
+	color: #cc9966;
+	font-size: 37px;
+	position: relative;
+	text-decoration: none;
+}
+.contact-form h2{
+	color: #cc9966;
+	font-weight: bold;
+}
+.contact-form h3{
+	font-weight: bold;
+}
+.contact-form{
+	text-align: right;
+}
+.contact-form form input, .contact-form form textarea{
+	width: 100%;
+	display: block;
+	text-align: right;
+	font-size: 20px;
+	padding: 6px;
+	margin: 11px 0;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	color: #000;
+}
+.contact-form form textarea{
+	height: 150px;
+}
+.contact-form form input[type="submit"] {
+	text-align: center;
+	background: #cc9966;
+	padding: 1px 32px;
+	width: inherit;
+	color: #fff;
+}
+/******************************************
+# About Us style start form here
+*******************************************/
+
+.about-us{
+	text-align: center;
+}
+.about-us h2{
+	color: #cc9966;
+}
+.about-us h3{
+	color: #333;
+	width: 60%;
+	margin: auto;
+}
+.maps-area{
+	text-align: center;
+}
+.maps-area h2{
+	color: #cc9966;
+	font-size: 20px;
+	font-weight: bold;
+	margin: 0;
+	padding-bottom: 10px;
+}
+
+
+
+/******************************************
+# Blog page style start form here
+*******************************************/
+.blog-top img{
+	width: 100%;
+	-o-object-fit: cover;
+	   object-fit: cover;
+	-o-object-position: 100% 75%;
+	   object-position: 100% 75%;
+	height: 225px;
+}
+.blog-top {
+	margin-top: -21px;
+}
+/******************************************
+# Footer Area style start form here
+*******************************************/
+.footer-image img{
+	width: 100%;
+}
+
+footer.footer-area{
+	background-image: url(images/footer-bg.png);
+	padding: 20px 0;
+}
+aside {
+	background: #fff;
+	padding: 13px 10px;
+}
+aside h2 {
+	font-size: 15px;
+	color: #cc9966;
+	margin: 0;
+	padding-bottom: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+.ss-title {
+	background: #fff;
+	padding: 13px 10px;
+	display: inline-block;
+}
+.social-area{
+	text-align:center;
+	margin-top: 51px;
+}
+.social-area h2, .social-area h3{
+	margin: 0;
+}
+.social-area h2{
+	color: #cc9966;
+	font-size: 30px;
+	font-weight: bold;
+}
+.social-area h3{
+	color: #333333;
+	font-size: 20px;
+	font-weight: bold;
+}
+.icon-social {
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	width: 56%;
+}
+.icon-social li {
+	display: inline-block;
+	text-align: center;
+}
+.icon-social li a{
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+	font-size: 16px;
+	color: #333;
+	text-decoration:none;
+	
+}
+.icon-social li a i.fa-facebook{
+	background: #0066cc;
+}
+.icon-social li a i.fa-instagram{
+	background: #993399;
+}
+.icon-social li a i {
+	color: #fff;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	border: 1px solid transparent;
+	display: block;
+	padding: 10px;
+	font-size: 27px;
+	margin: auto;
+}
+
